@@ -1,0 +1,74 @@
+[
+    {
+      "_id": "6384ff2281988ce75d6dece0",
+      "index": 0,
+      "guid": "adcb0cef-ff38-4953-82b1-0ff808dd4c78",
+      "isActive": true,
+      "balance": "$1,476.84",
+      "picture": "http://placehold.it/32x32",
+      "age": 26,
+      "name": "Isabelle Burch",
+      "gender": "female",
+      "company": "PRIMORDIA"
+    },
+    {
+      "_id": "6384ff22da9ed93b961e8617",
+      "index": 1,
+      "guid": "8097e796-973a-489b-8aea-1019b33b3b6f",
+      "isActive": false,
+      "balance": "$2,277.88",
+      "picture": "http://placehold.it/32x32",
+      "age": 34,
+      "name": "Saunders Stark",
+      "gender": "male",
+      "company": "HARMONEY"
+    },
+    {
+      "_id": "6384ff22b43e982a5a7c230f",
+      "index": 2,
+      "guid": "2df4c2bd-3a4f-4e87-97aa-ac5fc7bd064e",
+      "isActive": true,
+      "balance": "$3,783.93",
+      "picture": "http://placehold.it/32x32",
+      "age": 22,
+      "name": "Collins Sampson",
+      "gender": "male",
+      "company": "QUAILCOM"
+    },
+    {
+      "_id": "6384ff22500140508b67c3f4",
+      "index": 3,
+      "guid": "066374a0-3267-4b95-b984-06ecdb12ca99",
+      "isActive": false,
+      "balance": "$1,089.14",
+      "picture": "http://placehold.it/32x32",
+      "age": 36,
+      "name": "Dona Huff",
+      "gender": "female",
+      "company": "SUREPLEX"
+    },
+    {
+      "_id": "6384ff225ab235cc9bb66e33",
+      "index": 4,
+      "guid": "9c40db69-7365-4fab-88ae-c1ba7d01be67",
+      "isActive": false,
+      "balance": "$3,931.56",
+      "picture": "http://placehold.it/32x32",
+      "age": 21,
+      "name": "Rosie Franks",
+      "gender": "female",
+      "company": "INQUALA"
+    },
+    {
+      "_id": "6384ff22be1429c03e7ce8f5",
+      "index": 5,
+      "guid": "f4d23cf2-db75-4189-9ef8-5821210347b9",
+      "isActive": true,
+      "balance": "$1,631.93",
+      "picture": "http://placehold.it/32x32",
+      "age": 40,
+      "name": "Christa Kirkland",
+      "gender": "female",
+      "company": "ZIDOX"
+    }
+  ]

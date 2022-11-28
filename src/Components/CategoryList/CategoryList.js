@@ -1,49 +1,35 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState } from 'react';
+import { BiArrowBack } from 'react-icons/bi'
 
 const CategoryList = () => {
+    const [categoryData, setCategoryData] = useState([])
+
+    axios.get('/data.json')
+        .then(res => setCategoryData(res.data))
+
     return (
         <div>
-            <div className='bg-blue-800 h-40 w-2/4 items-center mx-auto'>
-                <input type="text" placeholder='search here' className="input items-center my-auto input-bordered" />
+            <div className='bg-blue-800 rounded-lg h-40 w-2/4 py-auto items-center mx-auto'>
+                <div>
+                    <h1 className='pt-6'>My Customers</h1>
+                </div>
+                <BiArrowBack  className=' ml-10'/>
+            <input type="text" placeholder="Type here" className="input input-bordered input-accent w-1/2" />
                 <button className='btn btn-success'>Submit</button>
             </div>
-            <div className='text-black'>
-                <div className="overflow-x-auto w-full">
-                    <table className="table w-3/4 mx-auto">
-                        
-                        <tbody>
-                            <tr>
-                                <th>
-                                    <label>
-                                        <input type="checkbox" className="checkbox" />
-                                    </label>
-                                </th>
-                                <td>
-                                    <div className="flex items-center space-x-3">
-                                        <div className="avatar">
-                                            <div className="mask mask-squircle w-12 h-12">
-                                                <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" />
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className="font-bold">Hart Hagerty</div>
-                                            <div className="text-sm opacity-50">United States</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    Zemlak, Daniel and Leannon
-                                    <br />
-                                    <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
-                                </td>
-                                <td>Purple</td>
-                                <th>
-                                    <button className="btn btn-ghost btn-xs">details</button>
-                                </th>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div className='text-black w-3/4 mt-10 mx-auto'>
+                {
+                    categoryData.map(data=>
+                        <div className='flex shadow-lg mb-8 py-3 text-left justify-evenly gap-10 mx-auto' key={data.id}>
+                            <h1 className='justify-start items-center'><span className='py-8 px-8 rounded-md bg-slate-300'>{data.username}</span></h1>
+                            <div>
+                            <h1 className='justify-start'>{data.name}</h1>
+                            <h1 className='justify-start'>{data.email}</h1>
+                            </div>
+                        </div>
+                        )
+                }
             </div>
         </div>
     );
