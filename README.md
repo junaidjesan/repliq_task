@@ -1,15 +1,23 @@
-# Getting Started with Create React App
+# repliq test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+i have done it with react \
+for style i used tailwind and daisy ui for component laybrary\
+the live site link given in the discription\
 
-In the project directory, you can run:
+## librabis
+
+for data : used fake data which included public folder in this app\
+
+for fetch :axios and tanstake query\
+for icons : react icon\
+code edit : VS Code\
+
 
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open  ( https://incandescent-swan-6263cb.netlify.app/orders ) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
