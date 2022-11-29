@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsFillShareFill, BsThreeDotsVertical } from 'react-icons/bs'
 
-const UnlimitedProducts = () => {
+const UnlimitedProducts = ({setData}) => {
 
     const { data: products = [] } = useQuery({
         queryKey: ['products'],

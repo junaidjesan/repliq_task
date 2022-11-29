@@ -3,12 +3,15 @@ import React, { useState } from 'react';
 import { GoSettings } from 'react-icons/go'
 import { AiOutlineStar } from 'react-icons/ai'
 
-const ManageOrders = () => {
+const ManageOrders = ({setData}) => {
 
     const [manageOrdersData, setManageOrdersData] = useState([])
 
     axios.get('productData.json')
-        .then(res => setManageOrdersData(res.data))
+        .then(res => {
+            setManageOrdersData(res.data)
+            setData(res.data)
+        })
     return (
         <div className='text-black'>
             <div className='bg-blue-800 rounded-lg h-40 w-2/4 py-auto items-center mx-auto'>
