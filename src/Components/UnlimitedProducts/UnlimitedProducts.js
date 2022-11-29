@@ -27,7 +27,7 @@ const UnlimitedProducts = () => {
             <div className='text-black'>
                 {
                     products.map(product => <>
-                        <div className=' w-2/4 mx-auto py-3 mb-10 gap-5 bg-slate-200'>
+                        <div key={product._id} className=' w-2/4 mx-auto py-3 mb-10 gap-5 bg-slate-200'>
                             <div className='flex justify-evenly'>
                                 <div>
                                     <img className='h-40 w-40' src={product.picture} alt="" />
