@@ -4,6 +4,7 @@ import CategoryList from '../Components/CategoryList/CategoryList';
 import ManageOrders from '../Components/ManageOrders/ManageOrders';
 import OnlinePayments from '../Components/OnlinePayments/OnlinePayments';
 import OnalinePayments from '../Components/OnlinePayments/OnlinePayments';
+import Orders from '../Components/Orders/Orders';
 import UnlimitedProducts from '../Components/UnlimitedProducts/UnlimitedProducts';
 import Main from '../Layouts/Main';
 
@@ -28,6 +29,10 @@ export const projectRouter=createBrowserRouter([
             {
                 path:'/online-payments',
                 element:<OnlinePayments></OnlinePayments>
+            },
+            {
+                path:'/orders',
+                element:<Orders></Orders>
             }
         ]
     }
