@@ -8,6 +8,7 @@ const Header = () => {
             <Link className='btn btn-primary' to='/'>Category List</Link>
             <Link className='btn btn-primary' to='/manage-orders'>Manage Orders</Link>
             <Link className='btn btn-primary' to='/unlimited-products'>Unlimited Product</Link>
+            <Link className='btn btn-primary' to='/online-payments'>Online Payments</Link>
         </div>
     );
 };

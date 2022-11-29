@@ -2,6 +2,8 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import CategoryList from '../Components/CategoryList/CategoryList';
 import ManageOrders from '../Components/ManageOrders/ManageOrders';
+import OnlinePayments from '../Components/OnlinePayments/OnlinePayments';
+import OnalinePayments from '../Components/OnlinePayments/OnlinePayments';
 import UnlimitedProducts from '../Components/UnlimitedProducts/UnlimitedProducts';
 import Main from '../Layouts/Main';
 
@@ -22,6 +24,10 @@ export const projectRouter=createBrowserRouter([
             {
                 path:'/unlimited-products',
                 element:<UnlimitedProducts></UnlimitedProducts>
+            },
+            {
+                path:'/online-payments',
+                element:<OnlinePayments></OnlinePayments>
             }
         ]
     }

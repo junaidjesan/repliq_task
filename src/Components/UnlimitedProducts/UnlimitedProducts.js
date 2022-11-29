@@ -13,7 +13,6 @@ const UnlimitedProducts = () => {
             return result
         }
     })
-    console.log(products)
 
     return (
         <div className='text-black w-3/4 mx-auto'>

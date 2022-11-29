@@ -10,7 +10,7 @@ const CategoryList = () => {
 
     return (
         <div>
-            <div className='bg-blue-800 rounded-lg h-40 w-2/4 py-auto items-center mx-auto'>
+            <div className='bg-blue-800 rounded-lg h-40 w-3/6 py-auto items-center mx-auto'>
                 <div>
                     <h1 className='pt-6'>My Customers</h1>
                 </div>
@@ -21,7 +21,7 @@ const CategoryList = () => {
             <div className='text-black w-3/4 mt-10 mx-auto'>
                 {
                     categoryData.map(data=>
-                        <div className='flex shadow-lg mb-8 py-3 text-left justify-evenly gap-10 mx-auto' key={data.id}>
+                        <div className='flex shadow-lg mb-8 py-3 text-left justify-evenly gap-10 mx-auto' key={data._id}>
                             <h1 className='justify-start items-center'><span className='py-8 px-8 rounded-md bg-slate-300'>{data.username}</span></h1>
                             <div>
                             <h1 className='justify-start'>{data.name}</h1>
