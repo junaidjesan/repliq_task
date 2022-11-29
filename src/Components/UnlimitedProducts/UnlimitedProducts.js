@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BsThreeDotsVertical } from 'react-icons/bs'
+import { BsFillShareFill, BsThreeDotsVertical } from 'react-icons/bs'
 
 const UnlimitedProducts = () => {
 
@@ -27,20 +27,26 @@ const UnlimitedProducts = () => {
             <div className='text-black'>
                 {
                     products.map(product => <>
-                        <div className='flex'>
-                            <div>
-                                <img src={product.picture} alt="" />
-                            </div>
-                            <div>
-                                <h1>{product.name}</h1>
-                            </div>
-                            <div>
-                                <h1><BsThreeDotsVertical className='text-black' /> </h1>
-                                <div className="form-control">
-                                    <label className="label cursor-pointer">
-                                        <input type="checkbox" className="toggle" checked />
-                                    </label>
+                        <div className=' w-2/4 mx-auto py-3 mb-10 gap-5 bg-slate-200'>
+                            <div className='flex justify-evenly'>
+                                <div>
+                                    <img className='h-40 w-40' src={product.picture} alt="" />
                                 </div>
+                                <div>
+                                    <h1>Name: {product.name}</h1>
+                                    <strong>Price: {product.balance}</strong>
+                                </div>
+                                <div className=''>
+                                    <h1><BsThreeDotsVertical className='text-black mb-16' /> </h1>
+                                    <div className="form-control">
+                                        <label className="label cursor-pointer">
+                                            <input type="checkbox" className="toggle" checked />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='btn btn-outline btn-primary'>
+                                <h1 className='flex items-center gap-5'><BsFillShareFill /> shear now</h1>
                             </div>
                         </div>
                     </>)
